@@ -1,0 +1,242 @@
+{
+ "scope": "sanxia",
+ "generated_at": "2026-10-13T20:26:12",
+ "model": "deepseek-chat",
+ "event": {
+  "title": "三峡新材筹划发行股份及支付现金收购珠海赛纬不低于53.14%股份",
+  "event_type": "重大资产重组/收购",
+  "subjects": [
+   "湖北三峡新型建材股份有限公司（三峡新材，600293.SH）"
+  ],
+  "objects": [
+   "珠海市赛纬电子材料股份有限公司（珠海赛纬/赛纬电子）不低于53.14%股份"
+  ],
+  "claims": [
+   {
+    "text": "三峡新材拟通过发行股份及支付现金方式收购珠海赛纬不低于53.14%股份，预计构成重大资产重组、不构成重组上市，不会导致控股股东及实际控制人变更。",
+    "claim_type": "fact",
+    "evidence_status": "supported",
+    "note": "多份公告及转载材料一致记载交易方式、比例及重组性质判断。",
+    "evidences": [
+     {
+      "doc_id": "#48",
+      "relation": "supports",
+      "quote": "收购其持有的珠海市赛纬电子材料股份有限公司（以下简称“珠海赛纬”）不低于53.14%股份"
+     },
+     {
+      "doc_id": "#63",
+      "relation": "supports",
+      "quote": "公司已与标的公司持股53.14%的主要股东签署了《停牌意向协议》"
+     },
+     {
+      "doc_id": "#47",
+      "relation": "supports",
+      "quote": "本次交易不会导致公司控股股东、实际控制人发生变更"
+     }
+    ]
+   },
+   {
+    "text": "交易对方包括戴晓兵、溢利投资、恒纬投资、薛瑶和吕海霞等。",
+    "claim_type": "fact",
+    "evidence_status": "supported",
+    "note": "多份材料一致列明交易对方范围。",
+    "evidences": [
+     {
+      "doc_id": "#52",
+      "relation": "supports",
+      "quote": "向包括戴晓兵、溢利投资、恒纬投资、薛瑶和吕海霞等在内的交易对方收购其持有珠海市赛纬电子材料股份有限公司（以下简称“珠海赛"
+     },
+     {
+      "doc_id": "#49",
+      "relation": "supports",
+      "quote": "交易对方包括珠海赛纬实际控制人戴晓兵、董事薛瑶、高级管理人员吕海霞，以及员工持股平台珠海市溢利投资合伙企业（有限合伙）和"
+     }
+    ]
+   },
+   {
+    "text": "三峡新材股票自2026年9月29日开市起停牌，预计停牌不超过10个交易日，后续继续停牌。",
+    "claim_type": "fact",
+    "evidence_status": "supported",
+    "note": "停牌公告及后续进展公告确认停牌及继续停牌。",
+    "evidences": [
+     {
+      "doc_id": "#48",
+      "relation": "supports",
+      "quote": "公司股票自2026年9月29日开市起停牌，预计停牌时间不超过10个交易日"
+     },
+     {
+      "doc_id": "#55",
+      "relation": "supports",
+      "quote": "公司股票将继续停牌"
+     },
+     {
+      "doc_id": "#58",
+      "relation": "supports",
+      "quote": "本次交易尚需提交公司董事会、股东会审议，并经监管机构批准后方可正式实施，能否通过审批尚存在一定不确定性"
+     }
+    ]
+   },
+   {
+    "text": "珠海赛纬主要从事锂离子电池电解液、新型膜材料等电子专用材料的研发与生产，持有危险化学品生产资质。",
+    "claim_type": "fact",
+    "evidence_status": "supported",
+    "note": "转载材料对标的业务及资质有明确描述。",
+    "evidences": [
+     {
+      "doc_id": "#50",
+      "relation": "supports",
+      "quote": "主要从事锂离子电池电解液、新型膜材料等电子专用材料的研发与生产，持有危险化学品生产资质"
+     }
+    ]
+   },
+   {
+    "text": "珠海赛纬曾冲击创业板IPO，过会后撤回。",
+    "claim_type": "fact",
+    "evidence_status": "supported",
+    "note": "评论及转载材料记载其IPO未果/撤回。",
+    "evidences": [
+     {
+      "doc_id": "#53",
+      "relation": "supports",
+      "quote": "值得一提的是，标的公司珠海赛纬曾冲击创业板IPO未果"
+     },
+     {
+      "doc_id": "#56",
+      "relation": "supports",
+      "quote": "赛纬电子最终选择撤回IPO，正是其自身也承认经营环境已发生重大变化的结果"
+     }
+    ]
+   },
+   {
+    "text": "本次交易尚处筹划阶段，尚未签署正式协议，存在因无法达成一致而中止的风险，并需董事会、股东会审议及监管机构批准。",
+    "claim_type": "fact",
+    "evidence_status": "supported",
+    "note": "官方进展公告及评论材料均提示筹划阶段及审批不确定性。",
+    "evidences": [
+     {
+      "doc_id": "#49",
+      "relation": "supports",
+      "quote": "目前交易尚处于筹划阶段，交易各方尚未签署正式协议，存在因无法达成一致而中止实施的风险"
+     },
+     {
+      "doc_id": "#51",
+      "relation": "supports",
+      "quote": "本次交易存在因各方无法达成一致而中止的风险，尚需经公司董事会、股东会审议及监管机构批准"
+     },
+     {
+      "doc_id": "#58",
+      "relation": "supports",
+      "quote": "本次交易尚需提交公司董事会、股东会审议，并经监管机构批准后方可正式实施，能否通过审批尚存在一定不确定性"
+     }
+    ]
+   },
+   {
+    "text": "三峡新材股票停牌前连续三个交易日收盘价格涨幅偏离值累计超过20%，属于异常波动。",
+    "claim_type": "fact",
+    "evidence_status": "supported",
+    "note": "转载材料记载异常波动情况。",
+    "evidences": [
+     {
+      "doc_id": "#54",
+      "relation": "supports",
+      "quote": "股票于2026年9月23日、9月24日、9月28日连续三个交易日内收盘价格涨幅偏离值累计超过20%"
+     }
+    ]
+   },
+   {
+    "text": "三峡新材玻璃制造与珠海赛纬电解液生产分属不同产业赛道，本次收购属于跨界收购。",
+    "claim_type": "opinion",
+    "evidence_status": "supported",
+    "note": "评论材料对产业差异作出判断。",
+    "evidences": [
+     {
+      "doc_id": "#56",
+      "relation": "supports",
+      "quote": "三峡新材的玻璃制造与赛纬电子的电解液生产分属完全不同的产业赛道"
+     }
+    ]
+   }
+  ],
+  "versions": [
+   {
+    "version_no": 1,
+    "date": "2026-09-28",
+    "trigger_doc_ids": [
+     "#48",
+     "#50",
+     "#52",
+     "#53",
+     "#54"
+    ],
+    "change_type": "initial",
+    "status_before": null,
+    "status_after": "supported",
+    "reason": "三峡新材首次披露筹划发行股份及支付现金收购珠海赛纬不低于53.14%股份并停牌。"
+   },
+   {
+    "version_no": 2,
+    "date": "2026-09-29",
+    "trigger_doc_ids": [
+     "#47",
+     "#63"
+    ],
+    "change_type": "update",
+    "status_before": "supported",
+    "status_after": "supported",
+    "reason": "公司发布停牌公告，确认已与持股53.14%的主要股东签署《停牌意向协议》。"
+   },
+   {
+    "version_no": 3,
+    "date": "2026-10-09",
+    "trigger_doc_ids": [
+     "#60",
+     "#61",
+     "#64"
+    ],
+    "change_type": "update",
+    "status_before": "supported",
+    "status_after": "supported",
+    "reason": "出现详式权益变动报告书相关材料，但摘要未提供具体主张及原文引用。"
+   },
+   {
+    "version_no": 4,
+    "date": "2026-10-12",
+    "trigger_doc_ids": [
+     "#51",
+     "#55"
+    ],
+    "change_type": "update",
+    "status_before": "supported",
+    "status_after": "supported",
+    "reason": "公司公告筹划购买控股权并继续停牌，提示中止风险及审批不确定性。"
+   },
+   {
+    "version_no": 5,
+    "date": "2026-10-13",
+    "trigger_doc_ids": [
+     "#58"
+    ],
+    "change_type": "update",
+    "status_before": "supported",
+    "status_after": "supported",
+    "reason": "公司发布停牌进展公告，重申交易尚需董事会、股东会审议及监管机构批准。"
+   }
+  ],
+  "status": "supported",
+  "conclusion": "已确认部分：三峡新材拟通过发行股份及支付现金方式收购珠海赛纬不低于53.14%股份，预计构成重大资产重组、不构成重组上市且不会导致控股股东及实际控制人变更；公司已与持股53.14%的主要股东签署《停牌意向协议》，股票自2026年9月29日起停牌并继续停牌；交易对方包括戴晓兵、溢利投资、恒纬投资、薛瑶和吕海霞等；标的公司主要从事锂离子电池电解液、新型膜材料等电子专用材料研发生产并持有危险化学品生产资质，曾冲击创业板IPO未果。仍不确定部分：交易尚处筹划阶段，尚未签署正式协议，存在中止风险，且需董事会、股东会审议及监管机构批准，最终能否实施及具体交易方案尚未确定；2026年10月9日详式权益变动报告书相关材料的具体内容未在摘要中体现。",
+  "uncertainty": [
+   "交易能否最终达成，是否存在因各方无法达成一致而中止的风险。",
+   "交易尚需董事会、股东会审议及监管机构批准，审批结果及时间存在不确定性。",
+   "2026年10月9日详式权益变动报告书相关材料的具体内容及对交易的影响尚未明确。"
+  ],
+  "relations": [
+   {
+    "thscode": "600293.SH",
+    "stock_name": "三峡新材",
+    "relationship_type": "主体",
+    "relevance_level": "high",
+    "impact_hypothesis": "作为收购方，若交易推进，可能影响公司业务结构及市场预期，但交易尚处筹划阶段且存在中止及审批不确定性。"
+   }
+  ]
+ }
+}

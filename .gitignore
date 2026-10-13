@@ -1,0 +1,26 @@
+# ===== 密钥与本地凭证（禁止提交） =====
+config/secrets.env
+.qoder/
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+
+# ===== Node / 前端 =====
+node_modules/
+# 注意：frontend/dist 为打包交付所需（评审电脑直接运行），保留提交
+
+# ===== 运行时与临时产物 =====
+*.log
+logs/
+tmp/
+
+# ===== 系统与编辑器 =====
+.DS_Store
+Thumbs.db
+*.swp

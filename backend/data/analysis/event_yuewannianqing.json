@@ -1,0 +1,151 @@
+{
+ "scope": "yuewannianqing",
+ "generated_at": "2026-10-13T20:26:28",
+ "model": "deepseek-chat",
+ "event": {
+  "title": "粤万年青澄清董事长欧先涛涉东航MU6741航班冲突传闻并报案",
+  "event_type": "传闻澄清",
+  "subjects": [
+   "广东万年青制药股份有限公司",
+   "欧先涛"
+  ],
+  "objects": [
+   "东航MU6741航班客舱冲突事件传闻",
+   "网络不实信息传播"
+  ],
+  "claims": [
+   {
+    "text": "网络流传东航MU6741航班冲突事件涉事旅客为粤万年青董事长欧先涛的内容与事实严重不符，系恶意捏造。",
+    "claim_type": "fact",
+    "evidence_status": "supported",
+    "note": "公司通过官方澄清公告明确否认该传闻，并称内容系恶意捏造。",
+    "evidences": [
+     {
+      "doc_id": "31",
+      "relation": "supports",
+      "quote": "该内容与事实严重不符，欧先涛及公司其他员工从未乘坐该航班"
+     },
+     {
+      "doc_id": "37",
+      "relation": "supports",
+      "quote": "9月28日东航MU6741航班客舱冲突事件涉事旅客为广东万年青制药股份有限公司董事长欧先涛先生"
+     }
+    ]
+   },
+   {
+    "text": "欧先涛及公司其他员工从未乘坐东航MU6741航班。",
+    "claim_type": "fact",
+    "evidence_status": "supported",
+    "note": "多份公司官方澄清公告一致声明欧先涛从未乘坐该航班。",
+    "evidences": [
+     {
+      "doc_id": "31",
+      "relation": "supports",
+      "quote": "欧先涛及公司其他员工从未乘坐该航班"
+     },
+     {
+      "doc_id": "29",
+      "relation": "supports",
+      "quote": "网络流传涉及公司董事长、总裁欧先涛的相关内容均不属实，欧先涛从未乘坐该航班"
+     }
+    ]
+   },
+   {
+    "text": "欧先涛已就相关不实信息向公安机关报案并获受理，公司同步开展证据留存与保全。",
+    "claim_type": "fact",
+    "evidence_status": "supported",
+    "note": "多份公司官方公告一致披露报案已获受理及证据保全情况。",
+    "evidences": [
+     {
+      "doc_id": "34",
+      "relation": "supports",
+      "quote": "欧先涛已向公安机关报案并获受理，公司也同步就相关传播内容开展证据留存与保全工作"
+     },
+     {
+      "doc_id": "32",
+      "relation": "supports",
+      "quote": "欧先涛先生已向公安机关报案并获受理，公司也同步就相关传播内容开展证据留存与保全工作"
+     }
+    ]
+   },
+   {
+    "text": "相关不实信息未经核实即传播扩散，已对公司及董事长声誉造成重大负面影响。",
+    "claim_type": "opinion",
+    "evidence_status": "supported",
+    "note": "公司公告中对影响程度的定性表述，属公司主观判断但有公告文本支持。",
+    "evidences": [
+     {
+      "doc_id": "37",
+      "relation": "supports",
+      "quote": "相关信息未经核实即传播扩散， 引发投资者关注，已对公司及董事长本人声誉造成重大负面影响"
+     }
+    ]
+   },
+   {
+    "text": "网络流传涉粤万年青董事长欧先涛为东航客舱冲突事件涉事旅客的传闻。",
+    "claim_type": "rumor",
+    "evidence_status": "contradicted",
+    "note": "该传闻被公司官方澄清公告明确否认，并称系恶意捏造。",
+    "evidences": [
+     {
+      "doc_id": "31",
+      "relation": "contradicts",
+      "quote": "上述信息系无任何事实依据的恶意捏造，已构成对公司董事长个人名誉及公司商业信誉的侵害"
+     },
+     {
+      "doc_id": "33",
+      "relation": "contradicts",
+      "quote": "网络流传涉及公司董事长、总裁欧先涛的相关内容均不属实，欧先涛从未乘坐该航班"
+     }
+    ]
+   }
+  ],
+  "versions": [
+   {
+    "version_no": 1,
+    "date": "2026-10-07",
+    "trigger_doc_ids": [
+     "31",
+     "34"
+    ],
+    "change_type": "initial",
+    "status_before": null,
+    "status_after": "denied",
+    "reason": "公司首次发布澄清声明，否认董事长欧先涛涉东航MU6741航班冲突传闻，并披露已报案获受理。"
+   },
+   {
+    "version_no": 2,
+    "date": "2026-10-08",
+    "trigger_doc_ids": [
+     "29",
+     "30",
+     "32",
+     "33",
+     "35",
+     "36",
+     "37"
+    ],
+    "change_type": "update",
+    "status_before": "denied",
+    "status_after": "denied",
+    "reason": "公司于次日密集发布多份澄清公告，重申传闻不实、欧先涛从未乘坐该航班，并再次确认报案获受理及证据保全。"
+   }
+  ],
+  "status": "denied",
+  "conclusion": "已确认：公司通过多份官方澄清公告明确否认网络流传的董事长欧先涛涉东航MU6741航班冲突事件传闻，声明欧先涛及公司其他员工从未乘坐该航班，相关不实信息系恶意捏造，并已向公安机关报案且获受理，公司同步开展证据留存与保全。仍不确定：公安机关受理后的调查进展及最终结论尚未披露，传闻的源头与传播链条亦无公开信息。",
+  "uncertainty": [
+   "公安机关受理报案后的调查进展及最终结论尚未公开。",
+   "不实信息的首发来源及传播链条尚无公开披露。",
+   "公司所称'恶意捏造'的具体责任主体及后续法律追责情况不明。"
+  ],
+  "relations": [
+   {
+    "thscode": "301111.SZ",
+    "stock_name": "粤万年青",
+    "relationship_type": "主体",
+    "relevance_level": "high",
+    "impact_hypothesis": "公司为澄清公告发布主体，董事长传闻及澄清可能影响市场对公司治理与声誉的判断，进而波及股价与投资者情绪，但影响方向与幅度需结合后续调查进展观察。"
+   }
+  ]
+ }
+}

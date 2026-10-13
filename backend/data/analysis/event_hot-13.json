@@ -1,0 +1,113 @@
+{
+ "scope": "hot-13",
+ "generated_at": "2026-10-13T20:55:26",
+ "model": "deepseek-chat",
+ "event": {
+  "title": "兴森科技预计2026年前三季度归母净利润同比增长204.2%-227.02%",
+  "event_type": "业绩预告",
+  "subjects": [
+   "兴森科技"
+  ],
+  "objects": [
+   "PCB行业",
+   "CSP封装基板",
+   "光模块mSAP基板"
+  ],
+  "claims": [
+   {
+    "text": "兴森科技预计2026年前三季度归母净利润4亿元—4.3亿元，同比增长204.2%—227.02%。",
+    "claim_type": "fact",
+    "evidence_status": "supported",
+    "note": "公司官方公告直接给出具体业绩预告区间，证据充分。",
+    "evidences": [
+     {
+      "doc_id": "125",
+      "relation": "supports",
+      "quote": "预计2026年前三季度归母净利润4亿元—4.3亿元，同比增长204.2%—227.02%"
+     }
+    ]
+   },
+   {
+    "text": "业绩增长受益于AI基础设施建设驱动PCB行业高景气度。",
+    "claim_type": "fact",
+    "evidence_status": "supported",
+    "note": "公司官方公告明确将行业高景气归因于AI基础设施建设驱动。",
+    "evidences": [
+     {
+      "doc_id": "125",
+      "relation": "supports",
+      "quote": "报告期内，受益于AI基础设施建设驱动，PCB行业保持高景气度。公司通过产品结构优化、价格调整和降本增效措施，实现营业收入"
+     }
+    ]
+   },
+   {
+    "text": "公司通过产品结构优化、价格调整和降本增效措施实现营业收入增长。",
+    "claim_type": "fact",
+    "evidence_status": "supported",
+    "note": "公司官方公告明确列出上述经营措施。",
+    "evidences": [
+     {
+      "doc_id": "125",
+      "relation": "supports",
+      "quote": "公司通过产品结构优化、价格调整和降本增效措施，实现营业收入"
+     }
+    ]
+   },
+   {
+    "text": "CSP封装基板项目量价齐升，订单饱满，收入和利润同比大幅提升。",
+    "claim_type": "fact",
+    "evidence_status": "supported",
+    "note": "公司官方公告对CSP封装基板业务给出明确积极描述。",
+    "evidences": [
+     {
+      "doc_id": "125",
+      "relation": "supports",
+      "quote": "其中，CSP封装基板项目量价齐升，订单饱满，收入和利润同比大幅提升"
+     }
+    ]
+   },
+   {
+    "text": "光模块mSAP基板业务实现行业一线客户的突破，在手订单情况良好。",
+    "claim_type": "fact",
+    "evidence_status": "supported",
+    "note": "公司官方公告提及光模块mSAP基板业务客户突破及在手订单情况。",
+    "evidences": [
+     {
+      "doc_id": "125",
+      "relation": "supports",
+      "quote": "光模块mSAP基板业务实现行业一线客户的突破，在手订"
+     }
+    ]
+   }
+  ],
+  "versions": [
+   {
+    "version_no": 1,
+    "date": "2026-10-13",
+    "trigger_doc_ids": [
+     "125"
+    ],
+    "change_type": "initial",
+    "status_before": null,
+    "status_after": "supported",
+    "reason": "公司发布2026年前三季度业绩预告，首次披露归母净利润预计同比增长204.2%—227.02%。"
+   }
+  ],
+  "status": "supported",
+  "conclusion": "已确认：兴森科技于2026年10月13日发布官方业绩预告，预计2026年前三季度归母净利润4亿元—4.3亿元，同比增长204.2%—227.02%，并披露增长受益于AI基础设施建设驱动PCB行业高景气、产品结构优化与降本增效、CSP封装基板量价齐升以及光模块mSAP基板客户突破。仍不确定：该预告为初步测算数据，最终财务数据以正式三季报为准；光模块mSAP基板业务的具体订单规模与收入贡献未在材料中量化。",
+  "uncertainty": [
+   "业绩预告为初步测算，最终数据需以正式三季报为准。",
+   "光模块mSAP基板业务客户突破的具体订单金额及收入贡献未披露。",
+   "CSP封装基板项目量价齐升的持续性及对全年业绩的影响程度尚不明确。"
+  ],
+  "relations": [
+   {
+    "thscode": "002436.SZ",
+    "stock_name": "兴森科技",
+    "relationship_type": "主体",
+    "relevance_level": "high",
+    "impact_hypothesis": "公司作为业绩预告披露主体，其净利润大幅预增可能影响市场对公司盈利能力的预期，但实际影响取决于正式财报确认及市场整体环境。"
+   }
+  ]
+ }
+}
