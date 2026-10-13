@@ -126,6 +126,19 @@ python -m uvicorn backend.app.main:app --host 127.0.0.1 --port 8000
 
 **联网能力说明**：产品完整功能（浏览、溯源、通知、收件箱导入）**断网可用**；联网时可"刷新热点榜 / 追踪新热点 / 采集新材料"。数据源或 LLM 不可用时系统按"缓存兜底 + 明确提示"降级，**绝不伪造实时数据**。
 
+**⚠️ 从本仓库 clone 部署请注意：API 密钥需自行配置**
+
+出于安全合规要求，真实密钥文件 `config/secrets.env` **不随仓库分发**（已在 `.gitignore` 中排除）。clone 后若需使用联网功能（热点榜刷新、新热点追踪、新材料采集、LLM 增量分析），请：
+
+1. 复制 `config/secrets.example.env` 为 `config/secrets.env`；
+2. 按需填入以下密钥（均可留空，留空时对应功能自动走缓存兜底降级，不影响离线浏览）：
+   - `FUYAO_API_KEY` — 扶摇行情接口（[fuyao.aicubes.cn](https://fuyao.aicubes.cn) 申请）
+   - `IFIND_AUTH_TOKEN` — 同花顺 iFinD MCP（[mcp.51ifind.com](https://mcp.51ifind.com) 官网"个人中心-密钥"获取）
+   - `LLM_API_KEY` — OpenAI 兼容接口（如 DeepSeek，可留空）
+3. **请勿将填写后的 `secrets.env` 提交到任何公开仓库**。
+
+工程内置的数据快照与分析缓存已随仓库打包，**不配置密钥也可完整体验全部离线功能**。
+
 ## 9. 已知限制
 
 1. **文本形态**：iFinD 新闻/公告为语义检索返回的**相关段落**（非全文），产品内保留原始链接供核验；研报观点、投资者互动类文本本期未接入专线，如需使用将按题目要求引入公开权威材料并标注来源。
