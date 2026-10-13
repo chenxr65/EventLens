@@ -7,12 +7,17 @@
 from __future__ import annotations
 
 import asyncio
+import base64
 import contextlib
+import hmac
+import os
 import time
 from datetime import datetime, timedelta
 
-from fastapi import FastAPI
+from fastapi import FastAPI, Request
+from fastapi.responses import Response
 from fastapi.staticfiles import StaticFiles
+from starlette.middleware.base import BaseHTTPMiddleware
 
 from backend.app.api import router as api_router
 from backend.app.config import settings
@@ -59,6 +64,44 @@ async def lifespan(_: FastAPI):
 
 app = FastAPI(title="EventLens — 投资事件证据追踪台", version="0.1.0", lifespan=lifespan)
 app.include_router(api_router)
+
+
+# --------------------------------------------------------------------------
+# 可选 Basic Auth：仅当环境变量 BASIC_AUTH_USER 与 BASIC_AUTH_PASS 同时设置时启用。
+# 本地 start.bat 不设置 -> 完全无感；公网演示版在服务器 secrets.env 配置 -> 启用。
+# /api/health 始终豁免，用于探活与端口连通性检测。
+# --------------------------------------------------------------------------
+_AUTH_EXEMPT_PATHS = {"/api/health"}
+
+
+class BasicAuthMiddleware(BaseHTTPMiddleware):
+    def __init__(self, app, username: str, password: str) -> None:
+        super().__init__(app)
+        self._expected = base64.b64encode(
+            f"{username}:{password}".encode("utf-8")
+        ).decode("ascii")
+
+    async def dispatch(self, request: Request, call_next):
+        if request.url.path in _AUTH_EXEMPT_PATHS:
+            return await call_next(request)
+        header = request.headers.get("authorization", "")
+        parts = header.split(" ", 1)
+        provided = parts[1].strip() if len(parts) == 2 and parts[0].lower() == "basic" else ""
+        if provided and hmac.compare_digest(provided, self._expected):
+            return await call_next(request)
+        return Response(
+            status_code=401,
+            headers={"WWW-Authenticate": 'Basic realm="EventLens"'},
+            content="需要访问口令（Basic Auth）。",
+            media_type="text/plain; charset=utf-8",
+        )
+
+
+_auth_user = os.getenv("BASIC_AUTH_USER", "").strip()
+_auth_pass = os.getenv("BASIC_AUTH_PASS", "").strip()
+if _auth_user and _auth_pass:
+    app.add_middleware(BasicAuthMiddleware, username=_auth_user, password=_auth_pass)
+
 
 
 @app.get("/api/health")
