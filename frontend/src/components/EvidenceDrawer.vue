@@ -12,6 +12,12 @@
       </div>
 
       <el-descriptions :column="1" size="small" border class="mb12">
+        <el-descriptions-item label="事件发生时间">
+          <template v-if="doc.event_time">{{ doc.event_time }}</template>
+          <span v-else class="meta">
+            未知（材料未包含事件发生时间——系统保持未知，不以披露时间代替）
+          </span>
+        </el-descriptions-item>
         <el-descriptions-item label="披露时间">{{ doc.published_at || '未知' }}</el-descriptions-item>
         <el-descriptions-item label="抓取时间">{{ fmtTime(doc.first_fetched_at) }}</el-descriptions-item>
         <el-descriptions-item label="数据性质">
